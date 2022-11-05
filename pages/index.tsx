@@ -24,7 +24,6 @@ export default function Home() {
       </Head>
       <div className="{styles.container} grid grid-cols-2 sm:grid-cols-3 gap-1">
         <div className="min-h-fit">
-          <Image className="pl-20" src="/logo.svg" alt="fwywd Logo" width={317} height={110} />
         </div>
         <div className="hidden lg:grid grid-cols-6 gap-1 flex items-center">
           <div className="pl-5 md:text-base text-sm text-black-900 border-r-2 border-gray-500">Home</div>
@@ -47,6 +46,7 @@ export default function Home() {
       </div>
     </div>
     /*
+          <Image className="pl-20" src="/logo.svg" alt="fwywd Logo" width={317} height={110} />
           <button className="bg-blue-200 hover:bg-blue-100 text-white rounded px-4 py-4">無料説明会へ申し込み</button>
         <div className="text-8xl text-purple-600">Hello!</div>
         <div className="hidden md:block text-8xl text-purple-400">Hello!</div>
