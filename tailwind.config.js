@@ -21,6 +21,16 @@ module.exports = {
       'background':'#f1f7f8',
       'sub_text':'#06bbbc',
     },
+    /*
+      fontSize: {
+      xs: ['12px', '18px'],
+      sm: ['16px', '22px'],
+      normal: ['20px', '26px'],
+      lg: ['24px', '32px'],
+      xl: ['32px', '40px'],
+      xl2: ['40px', '48px'],
+    },
+    */
   },
   plugins: [],
 }

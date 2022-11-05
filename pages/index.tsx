@@ -7,7 +7,7 @@ const pageInfo = {
   site_name:'fwywd-task-Lv3',
   type:'training_web_task_Lv1',
   url: 'https://ctinaito.github.io/fwywd-LP/',
-  icon: './images/OGP_image.png'
+  icon: '/OGP_image.png'
 }
 
 export default function Home() {
@@ -22,26 +22,26 @@ export default function Home() {
         <meta property="og:url" content={pageInfo.url}></meta>
         <meta property="icon" content={pageInfo.icon}></meta>
       </Head>
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-1">
-        <div>
-          <Image src="/logo.svg" alt="fwywd Logo" width={317} height={110} />
+      <div className="{styles.container} grid grid-cols-2 sm:grid-cols-3 gap-1">
+        <div className="min-h-fit">
+          <Image className="pl-20" src="/logo.svg" alt="fwywd Logo" width={317} height={110} />
         </div>
-        <div className="hidden md:grid grid-cols-6 gap-1">
-          <div className="text-lg text-black-900">Home</div>
-          <div className="text-lg text-black-900">起業家育成</div>
-          <div className="text-lg text-black-900">コンセプト</div>
-          <div className="text-lg text-black-900">採用</div>
-          <div className="text-lg text-black-900">ニュース</div>
-          <div className="text-lg text-black-900">運営会社</div>
+        <div className="hidden lg:grid grid-cols-6 gap-1 flex items-center">
+          <div className="pl-5 md:text-base text-sm text-black-900 border-r-2 border-gray-500">Home</div>
+          <div className="pl-1 md:text-base text-sm text-black-900 border-r-2 border-gray-50">起業家育成</div>
+          <div className="pl-1 md:text-base text-sm text-black-900 border-r-2 border-gray-50">コンセプト</div>
+          <div className="pl-7 md:text-base text-sm text-black-900 border-r-2 border-gray-50">採用</div>
+          <div className="pl-3 md:text-base text-sm text-black-900 border-r-2 border-gray-50">ニュース</div>
+          <div className="pl-3 md:text-base text-sm text-black-900">運営会社</div>
         </div>
         <div>
-          <a href="#_" className="inline-flex overflow-hidden text-white bg-gray-900 rounded group">
+          <a href="#_" className="inline-flex overflow-hidden text-white bg-gray-900 rounded group h-full">
             <span className="px-3.5 py-2 text-white bg-main group-hover:bg-main flex items-center justify-center">
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.6894 12.1929C24.2134 12.9157 24.2134 15.0843 22.6894 15.8071L8.35677 22.6044C7.0298 23.2337 5.49976 22.2659 5.49976 20.7973L5.49976 7.20273C5.49976 5.7341 7.0298 4.76633 8.35677 5.39565L22.6894 12.1929Z" fill="#F2C94C"/>
               </svg>
             </span>
-            <span className="bg-main pl-4 pr-5 py-2.5">無料説明会へ申し込み</span>
+            <span className="bg-main md:text-lg text-base pl-2 pr-8 flex items-center">無料説明会へ申し込み</span>
           </a>
         </div>
       </div>
