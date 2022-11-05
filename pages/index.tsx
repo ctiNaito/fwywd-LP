@@ -9,7 +9,7 @@ const pageInfo = {
   site_name:'fwywd-task-Lv3',
   type:'training_web_task_Lv1',
   url: 'https://ctinaito.github.io/fwywd-LP/',
-  image: 'OGP_image.png',
+  image: './OGP_image.png',
   icon: './favicon.ico',
 }
 
