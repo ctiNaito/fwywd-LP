@@ -9,7 +9,8 @@ const pageInfo = {
   site_name:'fwywd-task-Lv3',
   type:'training_web_task_Lv1',
   url: 'https://ctinaito.github.io/fwywd-LP/',
-  icon: './OGP_image.png'
+  image: 'OGP_image.png',
+  icon: './favicon.ico',
 }
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
         <meta property="og:site_name" content={pageInfo.site_name}></meta>
         <meta property="og:type" content={pageInfo.type}></meta>
         <meta property="og:url" content={pageInfo.url}></meta>
+        <meta property="og:image" content={pageInfo.image}></meta>
         <meta property="icon" content={pageInfo.icon}></meta>
       </Head>
       <div className="{styles.container} grid grid-cols-2 sm:grid-cols-3 gap-1">
