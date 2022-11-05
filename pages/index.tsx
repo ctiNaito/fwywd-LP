@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
+
+import Logo from '../components/logo'
 //import styles from '../styles/Home.module.css'
 import styles from '../styles/pageHeader.module.css'
 
@@ -24,6 +26,7 @@ export default function Home() {
       </Head>
       <div className="{styles.container} grid grid-cols-2 sm:grid-cols-3 gap-1">
         <div className="min-h-fit">
+          <Logo />
         </div>
         <div className="hidden lg:grid grid-cols-6 gap-1 flex items-center">
           <div className="pl-5 md:text-base text-sm text-black-900 border-r-2 border-gray-500">Home</div>
