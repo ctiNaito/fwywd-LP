@@ -8,4 +8,7 @@ const nextConfig = {
 module.exports = {
   basePath: process.env.GITHUB_ACTIONS && "/fwywd-LP",
   trailingSlash: true,
+  experimental: {
+    optimizeFonts: true,
+  },
 };
