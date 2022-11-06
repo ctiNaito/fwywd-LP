@@ -16,6 +16,7 @@ const pageInfo = {
 export default function Home() {
   return (
     <div>
+
       <Head>
         <title>
           {pageInfo.site_name}
@@ -26,29 +27,44 @@ export default function Home() {
         <meta property="og:image" content={pageInfo.image}></meta>
         <meta property="icon" content={pageInfo.icon}></meta>
       </Head>
-      <div className="{styles.container} grid grid-cols-2 sm:grid-cols-3 gap-1">
-        <div className="min-h-fit">
-          <Logo />
+
+      <section id="Header">
+        <div className="flex flex-row px-5 py-3">
+          <div className="flex-none w-64 pl-10">
+            <a href="#" className="opacity-50"><Logo /></a>
+          </div>
+          <div className="flex-1 px-3 flex items-center justify-center">
+            <ul className="hidden lg:flex justify-center">
+              <li className="text-center md:text-lg text-sm text-main_text font-bold px-3 border-r border-gray"><a href="#">Home</a></li>
+              <li className="text-center md:text-lg text-sm text-main_text font-bold px-3 border-r"><a href="#">起業家育成</a></li>
+              <li className="text-center md:text-lg text-sm text-main_text font-bold px-3 border-r"><a href="#">コンセプト</a></li>
+              <li className="text-center md:text-lg text-sm text-main_text font-bold px-5 border-r"><a href="#">採用</a></li>
+              <li className="text-center md:text-lg text-sm text-main_text font-bold px-3 border-r"><a href="#">ニュース</a></li>
+              <li className="text-center md:text-lg text-sm text-main_text font-bold px-3"><a href="#">運営会社</a></li>
+            </ul>
+          </div>
+          <div className="flex-none">
+            <a href="#_" className="inline-flex overflow-hidden text-white rounded group h-full">
+              <span className="px-3.5 py-2 bg-main group-hover:opacity-70 flex items-center justify-center">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.6894 12.1929C24.2134 12.9157 24.2134 15.0843 22.6894 15.8071L8.35677 22.6044C7.0298 23.2337 5.49976 22.2659 5.49976 20.7973L5.49976 7.20273C5.49976 5.7341 7.0298 4.76633 8.35677 5.39565L22.6894 12.1929Z" fill="#F2C94C"/>
+                </svg>
+              </span>
+              <span className="bg-main hover:opacity-70 font-bold md:text-lg text-base pl-2 pr-8 flex items-center">無料説明会へ申し込み</span>
+            </a>
+          </div>
         </div>
-        <div className="hidden lg:grid grid-cols-6 gap-1 flex items-center">
-          <div className="pl-5 md:text-base text-sm text-black-900 border-r-2 border-gray-500">Home</div>
-          <div className="pl-1 md:text-base text-sm text-black-900 border-r-2 border-gray-50">起業家育成</div>
-          <div className="pl-1 md:text-base text-sm text-black-900 border-r-2 border-gray-50">コンセプト</div>
-          <div className="pl-7 md:text-base text-sm text-black-900 border-r-2 border-gray-50">採用</div>
-          <div className="pl-3 md:text-base text-sm text-black-900 border-r-2 border-gray-50">ニュース</div>
-          <div className="pl-3 md:text-base text-sm text-black-900">運営会社</div>
+      </section>
+
+      <section id="Hero">
+        <div className="flex flex-row">
+          <div className="flex-1">
+          </div>
+          <div className="flex-1">
+          </div>
         </div>
-        <div>
-          <a href="#_" className="inline-flex overflow-hidden text-white bg-gray-900 rounded group h-full">
-            <span className="px-3.5 py-2 text-white bg-main group-hover:bg-main flex items-center justify-center">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22.6894 12.1929C24.2134 12.9157 24.2134 15.0843 22.6894 15.8071L8.35677 22.6044C7.0298 23.2337 5.49976 22.2659 5.49976 20.7973L5.49976 7.20273C5.49976 5.7341 7.0298 4.76633 8.35677 5.39565L22.6894 12.1929Z" fill="#F2C94C"/>
-              </svg>
-            </span>
-            <span className="bg-main md:text-lg text-base pl-2 pr-8 flex items-center">無料説明会へ申し込み</span>
-          </a>
-        </div>
-      </div>
+      </section>
+
     </div>
     /*
           <Image className="pl-20" src="/logo.svg" alt="fwywd Logo" width={317} height={110} />
